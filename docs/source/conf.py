@@ -18,8 +18,14 @@ author = 'jklee2'
 templates_path = ['_templates']
 exclude_patterns = []
 
-extensions = ['sphinx.ext.autodoc']
+extensions = ['sphinx.ext.autodoc', 'myst_parser']
 html_theme = 'sphinx_rtd_theme'
+
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.txt': 'markdown',
+    '.md': 'markdown',
+}
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
